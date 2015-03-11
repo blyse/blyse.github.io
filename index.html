@@ -4,26 +4,74 @@
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Blyse.GitHub.io by blyse</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+        nav {
+            height: 50px;
+            background: black;
+            text-align: center;
+        }
+        nav ul li{
+            text-align: center;
+            display: inline-block;
+            margin-right: 20px;
+            list-style: none;
+            line-height: 50px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        div.container {
+            width: 900px;
+            margin: 0 auto;
+        }
+        section.top h1 {
+            text-align: center;
+            font-size: 30px;
+        }
+        section.top div {
+            background: black;
+            height: 300px;
+            width: 300px;
+            float:left;
+            line-height: 300px;
+            color: white;
+            text-align: center;
+            border-radius: 350px;
+        }
+        section.top div span {
+
+        }
+    </style>
 </head>
 
 <body>
 <header>
     <nav>
         <ul>
-            <li>PROFILE</li>
-            <li>CAREER</li>
-            <li>PROJECT</li>
-            <li>CONTACT</li>
+            <li><a href="#">PROFILE</a></li>
+            <li><a href="#">CAREER</a></li>
+            <li><a href="#">PROJECT</a></li>
+            <li><a href="#">CONTACT</a></li>
         </ul>
     </nav>
 </header>
 <div class="container">
-    <section>
+    <section class="top">
         <article>
             <h1>Jihoon Bae</h1>
-            <div>PROFILE</div>
-            <div>CAREER</div>
-            <div>PROJECT</div>
+            <div><span>PROFILE</span></div>
+            <div><span>CAREER</span></div>
+            <div><span>PROJECT</span></div>
         </article>
     </section>
     <section>
