@@ -4,6 +4,7 @@
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Blyse.GitHub.io by blyse</title>
+
     <style>
         * {
             margin: 0;
@@ -16,7 +17,7 @@
         nav {
             height: 50px;
             background: black;
-            text-align: center;
+            text-align: right;
         }
         nav ul li{
             text-align: center;
@@ -36,31 +37,73 @@
         section {
         }
         section.top {
-            height: 800px;
+            height: 650px;
             background: url('./images/bg1.jpg') no-repeat fixed 50% 50%;
         }
         section.top article {
             width: 900px;
             margin: 0 auto;
+            text-align:center;
         }
         section.top h1 {
             text-align: center;
             font-size: 30px;
             color: white;
+            padding-top: 90px;
+            margin-bottom:70px;
         }
         section.top div {
-            background: black;
-            height: 300px;
-            width: 300px;
-            float:left;
-            line-height: 300px;
+            background: rgba(0,0,0,0.6);
+            height: 250px;
+            width: 250px;
+
+            line-height: 250px;
             color: white;
             text-align: center;
-            border-radius: 350px;
+            display:inline-block;
+            border: 3px solid rgba(0,0,0,0.6);
+            border-radius: 250px;
+
+            margin-right: 15px;
+        }
+        section.top div:hover {
+            background: rgba(255,255,255,0.3);
+            color: black;
+            border: 3px solid rgba(0,0,0,0.6);
         }
         section.top div span {
 
         }
+        section.top div span a {
+            color: white;
+            text-decoration: none;
+        }
+
+        section.career {
+            height: 800px;
+            background: rgba(0,0,0,0.3);
+        }
+
+        section.career article {
+            width: 900px;
+            margin: 0 auto;
+        }
+        section.career h3 {
+            margin: 20px 0;
+        }
+        section.career article ul li.career_list {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        section.career article ul li.career_list ul li {
+            margin-left: 20px;
+
+        }
+        section.career article ul li.career_list ul li dd {
+            margin-left: 40px;
+        }
+
     </style>
 </head>
 
@@ -79,9 +122,9 @@
     <section class="top">
         <article>
             <h1>Jihoon Bae</h1>
-            <div><span>PROFILE</span></div>
-            <div><span>CAREER</span></div>
-            <div><span>PROJECT</span></div>
+            <div><span><a href="#">PROFILE</a></span></div>
+            <div><span><a href="#">CAREER</a></span></div>
+            <div><span><a href="#">PROJECT</a></span></div>
         </article>
     </section>
     <section>
@@ -108,17 +151,73 @@
             </dl>
         </article>
     </section>
-    <section>
+    <section class="career">
         <article>
             <h2>CAREER</h2>
-            <dl>
-                <dt>Wizard Works</dt>
-                <dd>2010.12.27 ~ now</dd>
-            </dl>
-            <dl>
-                <dt>Suwon University - The College Information Technology</dt>
-                <dd>Internet Information Engineering. 2005.03 ~ 2011.02</dd>
-            </dl>
+            <ul>
+                <li class="career_list">
+                    <h3>2005.03 ~ 2011.02 Suwon University - The College Information Technology</h3>
+                    <p>
+                    <ul>
+                        <li>
+                            <h4>Internet Information Engineering.</h4>
+                        </li>
+                    </ul>
+                <li class="career_list">
+                    <h3>2010.12 ~ 2015.03 Wizard Works</h3>
+                    <ul>
+                        <li>
+                            <dl>
+                                <dt><h4>2010.12 ~ 2012.10 KWAC Hybrid Web App development.</h4></dt>
+                                <dd>KWAC Seed app(Hybrid App use WAC) development with Device API, HTML5, CSS3.</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><h4>2011.07 ~ 2012.04 SomCloud - Somnote web app development.</h4></dt>
+                                <dd>SomCloud - Somnote web app developed.</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><h4>2012.04 ~ now SomCloud - website maintenance.</h4></dt>
+                                <dd>
+                                    <p>SomCloud web site added function, pages.</p>
+                                    <ul>
+                                        <li>Somnote image preview function used exif.js</li>
+                                        <li>SomCloud invite event page. link: <a href="https://somcloud.com/event/invite" target="_black">https://somcloud.com/event/invite</a></li>
+                                        <li>SomPremium coupon registration page. link: <a href="https://somcloud.com/setting/coupon" target="_black">https://somcloud.com/setting/coupon</a></li>
+                                        <li>Somnote 'catch note backup file(CSV)' import function development.</li>
+                                        <li>Sompen Package promotion web page development. link : <a href="https://sompen.somcloud.com" target="_black">https://sompen.somcloud.com</a></li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><h4>2013.11 ~ 2014.01 SomCloud website renewal.</h4></dt>
+                                <dd>
+                                    <p>SomCloud web site renewed. Use HTML5, CSS3(animation), Semantic Markup, Responsive web with media query. One HTML file, Multiple CSS file.</p>
+                                    <ul>
+                                        <li>link: <a href="https://somcloud.com" target="_black">https://somcloud.com</a></li>
+                                        <li>link: <a href="https://somcloud.com/about/somnote" target="_black">https://somcloud.com/about/somnote</a></li>
+                                        <li>link: <a href="https://somcloud.com/about/somtodo" target="_black">https://somcloud.com/about/somtodo</a></li>
+                                        <li>link: <a href="https://somcloud.com/about/premium" target="_black">https://somcloud.com/about/premium</a></li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><h4>2014.11 ~ now ThemeKeyboard</h4></dt>
+                                <dd>Back-end Development with nginx, PHP, MySQL, MongoDB</dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+
         </article>
     </section>
     <section>
@@ -126,48 +225,18 @@
             <h2>PROJECT</h2>
             <ul>
                 <li>
-                    <dl>
-                        <dt>ThemeKeyboard (2014.11 ~ now)</dt>
-                        <dd>Back-end Development with nginx, PHP, MySQL, MongoDB</dd>
-                        <dt></dt>
-                    </dl>
+
                 </li>
                 <li>
-                    <dl>
-                        <dt>SomCloud website renewal. (2013.11 ~ 2014.01)</dt>
-                        <dd>SomCloud web site renewed. Use HTML5, CSS3(animation), Semantic Markup, Responsive web with media query. One HTML file, Multiple CSS file.</dd>
-                    </dl>
-                    <ul>
-                        <li>link: <a href="https://somcloud.com" target="_black">https://somcloud.com</a></li>
-                        <li>link: <a href="https://somcloud.com/about/somnote" target="_black">https://somcloud.com/about/somnote</a></li>
-                        <li>link: <a href="https://somcloud.com/about/somtodo" target="_black">https://somcloud.com/about/somtodo</a></li>
-                        <li>link: <a href="https://somcloud.com/about/premium" target="_black">https://somcloud.com/about/premium</a></li>
-                    </ul>
+
                 </li>
                 <li>
-                    <dl>
-                        <dt>SomCloud - website maintenance. (2012.04 ~ now)</dt>
-                        <dd>SomCloud web site added function, pages.</dd>
-                        <ul>
-                            <li>Somnote image preview function used exif.js</li>
-                            <li>SomCloud invite event page. link: <a href="https://somcloud.com/event/invite" target="_black">https://somcloud.com/event/invite</a></li>
-                            <li>SomPremium coupon registration page. link: <a href="https://somcloud.com/setting/coupon" target="_black">https://somcloud.com/setting/coupon</a></li>
-                            <li>Somnote '`catch note backup file(CSV)' import function development.</li>
-                            <li>Sompen Package promotion web page development. link : <a href="https://sompen.somcloud.com" target="_black">https://sompen.somcloud.com</a></li>
-                        </ul>
-                    </dl>
+
                 </li>
                 <li>
-                    <dl>
-                        <dt>SomCloud - Somnote web app development. (2011.07 ~ 2012.04)</dt>
-                        <dd>SomCloud - Somnote web app developed.</dd>
-                    </dl>
+
                 </li>
                 <li>
-                    <dl>
-                        <dt>KWAC Hybrid Web App development. (2010.12 ~ 2012.10)</dt>
-                        <dd>KWAC Seed app(Hybrid App use WAC) development with Device API, HTML5, CSS3.</dd>
-                    </dl>
                 </li>
             </ul>
         </article>
