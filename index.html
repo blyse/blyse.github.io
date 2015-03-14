@@ -80,28 +80,45 @@
         }
 
         section.career {
-            height: 800px;
-            background: rgba(0,0,0,0.3);
+            height: 650px;
+            background: rgba(0,0,0,1);
+            position: relative;
         }
 
         section.career article {
             width: 900px;
             margin: 0 auto;
+            color: white;
+        }
+        section.career article h2 {
+            padding-top: 20px;
         }
         section.career h3 {
-            margin: 20px 0;
+            margin-top: 20px;
         }
         section.career article ul li.career_list {
             margin-left: 20px;
             margin-bottom: 20px;
         }
-
-        section.career article ul li.career_list ul li {
-            margin-left: 20px;
+        section.career article ul li.career_list ul {
+            margin-top: 10px;
+        }
+        section.career article ul li.career_list h4 {
 
         }
-        section.career article ul li.career_list ul li dd {
-            margin-left: 40px;
+        section.career article span {
+            margin-right: 20px;
+        }
+
+        section.career article ul li.career_list ul li.career_list_description {
+            margin-left: 26px;
+            margin-bottom: 10px;
+        }
+        section.career article ul li.career_list ul li.career_list_description.university {
+            margin-left: 198px;
+        }
+        section.career article ul li.career_list ul li.career_list_description.company dd {
+            margin-left: 170px;
         }
 
     </style>
@@ -156,31 +173,30 @@
             <h2>CAREER</h2>
             <ul>
                 <li class="career_list">
-                    <h3>2005.03 ~ 2011.02 Suwon University - The College Information Technology</h3>
-                    <p>
+                    <h3><span>2005.03 ~ 2011.02</span> Suwon University - The College Information Technology</h3>
                     <ul>
-                        <li>
+                        <li class='career_list_description university'>
                             <h4>Internet Information Engineering.</h4>
                         </li>
                     </ul>
                 <li class="career_list">
-                    <h3>2010.12 ~ 2015.03 Wizard Works</h3>
+                    <h3><span>2010.12 ~ 2015.03</span> Wizard Works</h3>
                     <ul>
-                        <li>
+                        <li class="career_list_description company">
                             <dl>
-                                <dt><h4>2010.12 ~ 2012.10 KWAC Hybrid Web App development.</h4></dt>
+                                <dt><h4><span>2010.12 ~ 2012.10</span> KWAC Hybrid Web App development.</h4></dt>
                                 <dd>KWAC Seed app(Hybrid App use WAC) development with Device API, HTML5, CSS3.</dd>
                             </dl>
                         </li>
-                        <li>
+                        <li class="career_list_description company">
                             <dl>
-                                <dt><h4>2011.07 ~ 2012.04 SomCloud - Somnote web app development.</h4></dt>
+                                <dt><h4><span>2011.07 ~ 2012.04</span> SomCloud - Somnote web app development.</h4></dt>
                                 <dd>SomCloud - Somnote web app developed.</dd>
                             </dl>
                         </li>
-                        <li>
+                        <li class="career_list_description company">
                             <dl>
-                                <dt><h4>2012.04 ~ now SomCloud - website maintenance.</h4></dt>
+                                <dt><h4><span>2012.04 ~ 2015.03</span> SomCloud - website maintenance.</h4></dt>
                                 <dd>
                                     <p>SomCloud web site added function, pages.</p>
                                     <ul>
@@ -193,9 +209,9 @@
                                 </dd>
                             </dl>
                         </li>
-                        <li>
+                        <li class="career_list_description company">
                             <dl>
-                                <dt><h4>2013.11 ~ 2014.01 SomCloud website renewal.</h4></dt>
+                                <dt><h4><span>2013.11 ~ 2014.01</span> SomCloud website renewal.</h4></dt>
                                 <dd>
                                     <p>SomCloud web site renewed. Use HTML5, CSS3(animation), Semantic Markup, Responsive web with media query. One HTML file, Multiple CSS file.</p>
                                     <ul>
@@ -207,9 +223,9 @@
                                 </dd>
                             </dl>
                         </li>
-                        <li>
+                        <li class="career_list_description company">
                             <dl>
-                                <dt><h4>2014.11 ~ now ThemeKeyboard</h4></dt>
+                                <dt><h4><span>2014.11 ~ 2015.03</span> ThemeKeyboard</h4></dt>
                                 <dd>Back-end Development with nginx, PHP, MySQL, MongoDB</dd>
                             </dl>
                         </li>
