@@ -7,6 +7,11 @@
     <title>Blyse.GitHub.io by blyse</title>
 
     <style>
+        ::selection {
+            background: white;
+            color: black;
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -15,98 +20,155 @@
         li {
             list-style: none;
         }
+
+        header {
+            position: fixed;
+            width: 100%;
+            height: 80px;
+        }
+
         nav {
-            height: 50px;
-            background: black;
+            background: #000;
             text-align: right;
         }
-        nav ul li{
+
+        nav ul li {
             text-align: center;
             display: inline-block;
-            margin-right: 20px;
             list-style: none;
-            line-height: 50px;
+            border-bottom: 4px solid transparent;
         }
+
         nav ul li a {
-            color: white;
+            color: #ffffff;
             text-decoration: none;
+            padding: 16px;
+            padding-bottom: 20px;
+            padding-top: 35px;
+            display: block;
+        }
+
+        nav ul li:hover {
+            border-bottom-color: #ffffff;
         }
 
         div.container {
-
+            padding-top: 80px;
         }
+
         section {
         }
+
+        div.top {
+            height: 550px;
+            background: url('./images/bg1.jpg') no-repeat fixed 50% 90%;
+        }
+
         section.top {
-            height: 650px;
-            background: url('./images/bg1.jpg') no-repeat fixed 50% 50%;
+            background: #000;
+            padding: 50px;
         }
+
         section.top article {
-            width: 900px;
+            max-width: 1044px;
             margin: 0 auto;
-            text-align:center;
         }
+
         section.top h1 {
-            text-align: center;
             font-size: 30px;
             color: white;
-            padding-top: 90px;
-            margin-bottom:70px;
+            padding: 40px;
         }
+
+        section.top p {
+            color: #ffffff;
+            padding: 0 40px 40px 40px;
+        }
+
         section.top div {
-            background: rgba(0,0,0,0.6);
+            background: rgba(0, 0, 0, 0.6);
             height: 250px;
             width: 250px;
 
             line-height: 250px;
-            color: white;
+            color: #ffffff;
             text-align: center;
-            display:inline-block;
-            border: 3px solid rgba(0,0,0,0.6);
+            display: inline-block;
+            border: 3px solid rgba(0, 0, 0, 0.6);
             border-radius: 250px;
 
             margin-right: 15px;
         }
+
         section.top div:hover {
-            background: rgba(255,255,255,0.3);
+            background: rgba(255, 255, 255, 0.3);
             color: black;
-            border: 3px solid rgba(0,0,0,0.6);
+            border: 3px solid rgba(0, 0, 0, 0.6);
         }
+
         section.top div span {
 
         }
+
         section.top div span a {
             color: white;
             text-decoration: none;
         }
 
+        section.profile {
+            padding: 50px;
+        }
+
+        section.profile article {
+            max-width: 1044px;
+            margin: 0 auto;
+        }
+
+        section.profile article h2 {
+            padding: 40px 40px 20px 40px;
+
+        }
+
+        section.profile article h3 {
+            padding: 0 60px;
+        }
+        section.profile article dl {
+            padding: 10px 60px;
+        }
+
         section.career {
-            height: 650px;
-            background: rgba(0,0,0,1);
+            padding: 50px;
+            background: rgba(0, 0, 0, 1);
             position: relative;
         }
 
         section.career article {
-            width: 900px;
+            max-width: 1044px;
             margin: 0 auto;
             color: white;
         }
+
         section.career article h2 {
-            padding-top: 20px;
+            padding: 40px 40px 20px 40px;
         }
+
         section.career h3 {
             margin-top: 20px;
         }
+
         section.career article ul li.career_list {
             margin-left: 20px;
             margin-bottom: 20px;
         }
+
         section.career article ul li.career_list ul {
             margin-top: 10px;
         }
+
         section.career article ul li.career_list h4 {
 
         }
+
         section.career article span {
             margin-right: 20px;
         }
@@ -115,9 +177,11 @@
             margin-left: 26px;
             margin-bottom: 10px;
         }
+
         section.career article ul li.career_list ul li.career_list_description.university {
             margin-left: 198px;
         }
+
         section.career article ul li.career_list ul li.career_list_description.company dd {
             margin-left: 170px;
         }
@@ -137,17 +201,23 @@
     </nav>
 </header>
 <div class="container">
+    <div class="top"></div>
     <section class="top">
         <article>
             <h1>Jihoon Bae</h1>
+
+            <p>Developer</p>
+            <!--
             <div><span><a href="#">PROFILE</a></span></div>
             <div><span><a href="#">CAREER</a></span></div>
             <div><span><a href="#">PROJECT</a></span></div>
+            -->
         </article>
     </section>
-    <section>
+    <section class="profile">
         <article>
             <h2>PROFILE</h2>
+
             <h3>Personality</h3>
             <dl>
                 <dt>Jihoon Bae</dt>
@@ -185,48 +255,64 @@
                     <ul>
                         <li class="career_list_description company">
                             <dl>
-                                <dt><h4><span>2010.12 ~ 2012.10</span> KWAC Hybrid Web App development.</h4></dt>
+                                <dt>
+                                <h4><span>2010.12 ~ 2012.10</span> KWAC Hybrid Web App development.</h4>
                                 <dd>KWAC Seed app(Hybrid App use WAC) development with Device API, HTML5, CSS3.</dd>
                             </dl>
                         </li>
                         <li class="career_list_description company">
                             <dl>
-                                <dt><h4><span>2011.07 ~ 2012.04</span> SomCloud - Somnote web app development.</h4></dt>
+                                <dt>
+                                <h4><span>2011.07 ~ 2012.04</span> SomCloud - Somnote web app development.</h4>
                                 <dd>SomCloud - Somnote web app developed.</dd>
                             </dl>
                         </li>
                         <li class="career_list_description company">
                             <dl>
-                                <dt><h4><span>2012.04 ~ 2015.03</span> SomCloud - website maintenance.</h4></dt>
+                                <dt>
+                                <h4><span>2012.04 ~ 2015.03</span> SomCloud - website maintenance.</h4>
                                 <dd>
                                     <p>SomCloud web site added function, pages.</p>
                                     <ul>
                                         <li>Somnote image preview function used exif.js</li>
-                                        <li>SomCloud invite event page. link: <a href="https://somcloud.com/event/invite" target="_black">https://somcloud.com/event/invite</a></li>
-                                        <li>SomPremium coupon registration page. link: <a href="https://somcloud.com/setting/coupon" target="_black">https://somcloud.com/setting/coupon</a></li>
+                                        <li>SomCloud invite event page. link: <a
+                                                href="https://somcloud.com/event/invite" target="_black">https://somcloud.com/event/invite</a>
+                                        </li>
+                                        <li>SomPremium coupon registration page. link: <a
+                                                href="https://somcloud.com/setting/coupon" target="_black">https://somcloud.com/setting/coupon</a>
+                                        </li>
                                         <li>Somnote 'catch note backup file(CSV)' import function development.</li>
-                                        <li>Sompen Package promotion web page development. link : <a href="https://sompen.somcloud.com" target="_black">https://sompen.somcloud.com</a></li>
+                                        <li>Sompen Package promotion web page development. link : <a
+                                                href="https://sompen.somcloud.com" target="_black">https://sompen.somcloud.com</a>
+                                        </li>
                                     </ul>
                                 </dd>
                             </dl>
                         </li>
                         <li class="career_list_description company">
                             <dl>
-                                <dt><h4><span>2013.11 ~ 2014.01</span> SomCloud website renewal.</h4></dt>
+                                <dt>
+                                <h4><span>2013.11 ~ 2014.01</span> SomCloud website renewal.</h4>
                                 <dd>
-                                    <p>SomCloud web site renewed. Use HTML5, CSS3(animation), Semantic Markup, Responsive web with media query. One HTML file, Multiple CSS file.</p>
+                                    <p>SomCloud web site renewed. Use HTML5, CSS3(animation), Semantic Markup,
+                                        Responsive web with media query. One HTML file, Multiple CSS file.</p>
                                     <ul>
-                                        <li>link: <a href="https://somcloud.com" target="_black">https://somcloud.com</a></li>
-                                        <li>link: <a href="https://somcloud.com/about/somnote" target="_black">https://somcloud.com/about/somnote</a></li>
-                                        <li>link: <a href="https://somcloud.com/about/somtodo" target="_black">https://somcloud.com/about/somtodo</a></li>
-                                        <li>link: <a href="https://somcloud.com/about/premium" target="_black">https://somcloud.com/about/premium</a></li>
+                                        <li>link: <a href="https://somcloud.com"
+                                                     target="_black">https://somcloud.com</a></li>
+                                        <li>link: <a href="https://somcloud.com/about/somnote" target="_black">https://somcloud.com/about/somnote</a>
+                                        </li>
+                                        <li>link: <a href="https://somcloud.com/about/somtodo" target="_black">https://somcloud.com/about/somtodo</a>
+                                        </li>
+                                        <li>link: <a href="https://somcloud.com/about/premium" target="_black">https://somcloud.com/about/premium</a>
+                                        </li>
                                     </ul>
                                 </dd>
                             </dl>
                         </li>
                         <li class="career_list_description company">
                             <dl>
-                                <dt><h4><span>2014.11 ~ 2015.03</span> ThemeKeyboard</h4></dt>
+                                <dt>
+                                <h4><span>2014.11 ~ 2015.03</span> ThemeKeyboard</h4>
                                 <dd>Back-end Development with nginx, PHP, MySQL, MongoDB</dd>
                             </dl>
                         </li>
