@@ -49,7 +49,11 @@
         }
 
         nav ul li:hover {
-            border-bottom-color: #ffffff;
+            background: #fff;
+            border-bottom-color: #000;
+        }
+        nav ul li:hover a {
+            color: #000;
         }
 
         div.container {
@@ -152,39 +156,36 @@
             padding: 40px 40px 20px 40px;
         }
 
+
+        section.career article h3 {
+            padding: 0 60px;
+        }
+
         section.career h3 {
             margin-top: 20px;
         }
+        section.career table {
+            margin: 10px 60px 0 60px;
+            border-spacing: 0 10px;
+            display: flex;
+        }
+        section.career table td.period {
+            width: 165px;
+            text-align: right;
+            vertical-align: top;
+        }
+        section.career table td.detail {
+            padding-left: 8px;
+        }
+        section.career table a {
+            color: #fff;
+        }
+        section.career table a:hover {
+            background: #fff;
+            color: #000;
 
-        section.career article ul li.career_list {
-            margin-left: 20px;
-            margin-bottom: 20px;
         }
 
-        section.career article ul li.career_list ul {
-            margin-top: 10px;
-        }
-
-        section.career article ul li.career_list h4 {
-
-        }
-
-        section.career article span {
-            margin-right: 20px;
-        }
-
-        section.career article ul li.career_list ul li.career_list_description {
-            margin-left: 26px;
-            margin-bottom: 10px;
-        }
-
-        section.career article ul li.career_list ul li.career_list_description.university {
-            margin-left: 198px;
-        }
-
-        section.career article ul li.career_list ul li.career_list_description.company dd {
-            margin-left: 170px;
-        }
 
     </style>
 </head>
@@ -214,7 +215,7 @@
             -->
         </article>
     </section>
-    <section class="profile">
+    <section id="profile" class="profile">
         <article>
             <h2>PROFILE</h2>
 
@@ -239,108 +240,83 @@
             </dl>
         </article>
     </section>
-    <section class="career">
+    <section id="career" class="career">
         <article>
             <h2>CAREER</h2>
+            <h3>2005.03 ~ 2011.02 Suwon University - The College Information Technology</h3>
             <table>
                 <tbody>
                     <tr>
-                        <td>2005.03 ~ 2011.02</td>
-                        <td>Suwon University - The College Information Technology</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>Internet Informaion Engineering.</td>
-                    </tr>
-                    <tr>
-                        <td>2010.12 ~ 2015.03</td>
-                        <td>Wizard Works</td>
-                    </tr>
-                    <tr>
-                        <td>2010.12 ~ 2012.10</td>
-                        <td>KWAC Hybrid Web App Development.</td>
+                        <td class="period">2005.03 ~ 2011.02</td>
+                        <td class="detail">Internet Informaion Engineering.</td>
                     </tr>
                 </tbody>
             </table>
-            <!--
-            <ul>
-                <li class="career_list">
-                    <h3><span>2005.03 ~ 2011.02</span> Suwon University - The College Information Technology</h3>
-                    <ul>
-                        <li class='career_list_description university'>
-                            <h4>Internet Information Engineering.</h4>
-                        </li>
-                    </ul>
-                <li class="career_list">
-                    <h3><span>2010.12 ~ 2015.03</span> Wizard Works</h3>
-                    <ul>
-                        <li class="career_list_description company">
-                            <dl>
-                                <dt>
-                                <h4><span>2010.12 ~ 2012.10</span> KWAC Hybrid Web App development.</h4>
-                                <dd>KWAC Seed app(Hybrid App use WAC) development with Device API, HTML5, CSS3.</dd>
-                            </dl>
-                        </li>
-                        <li class="career_list_description company">
-                            <dl>
-                                <dt>
-                                <h4><span>2011.07 ~ 2012.04</span> SomCloud - Somnote web app development.</h4>
-                                <dd>SomCloud - Somnote web app developed.</dd>
-                            </dl>
-                        </li>
-                        <li class="career_list_description company">
-                            <dl>
-                                <dt>
-                                <h4><span>2012.04 ~ 2015.03</span> SomCloud - website maintenance.</h4>
-                                <dd>
-                                    <p>SomCloud web site added function, pages.</p>
-                                    <ul>
-                                        <li>Somnote image preview function used exif.js</li>
-                                        <li>SomCloud invite event page. link: <a
-                                                href="https://somcloud.com/event/invite" target="_black">https://somcloud.com/event/invite</a>
-                                        </li>
-                                        <li>SomPremium coupon registration page. link: <a
-                                                href="https://somcloud.com/setting/coupon" target="_black">https://somcloud.com/setting/coupon</a>
-                                        </li>
-                                        <li>Somnote 'catch note backup file(CSV)' import function development.</li>
-                                        <li>Sompen Package promotion web page development. link : <a
-                                                href="https://sompen.somcloud.com" target="_black">https://sompen.somcloud.com</a>
-                                        </li>
-                                    </ul>
-                                </dd>
-                            </dl>
-                        </li>
-                        <li class="career_list_description company">
-                            <dl>
-                                <dt>
-                                <h4><span>2013.11 ~ 2014.01</span> SomCloud website renewal.</h4>
-                                <dd>
-                                    <p>SomCloud web site renewed. Use HTML5, CSS3(animation), Semantic Markup,
-                                        Responsive web with media query. One HTML file, Multiple CSS file.</p>
-                                    <ul>
-                                        <li>link: <a href="https://somcloud.com"
-                                                     target="_black">https://somcloud.com</a></li>
-                                        <li>link: <a href="https://somcloud.com/about/somnote" target="_black">https://somcloud.com/about/somnote</a>
-                                        </li>
-                                        <li>link: <a href="https://somcloud.com/about/somtodo" target="_black">https://somcloud.com/about/somtodo</a>
-                                        </li>
-                                        <li>link: <a href="https://somcloud.com/about/premium" target="_black">https://somcloud.com/about/premium</a>
-                                        </li>
-                                    </ul>
-                                </dd>
-                            </dl>
-                        </li>
-                        <li class="career_list_description company">
-                            <dl>
-                                <dt>
-                                <h4><span>2014.11 ~ 2015.03</span> ThemeKeyboard</h4>
-                                <dd>Back-end Development with nginx, PHP, MySQL, MongoDB</dd>
-                            </dl>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-            -->
+            <h3>2010.12 ~ 2015.03 Wizard Works</h3>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="period">2010.12 ~ 2012.10</td>
+                        <td class="detail">
+                            <p>KWAC Hybrid Web App Development.</p>
+                            <p>KWAC Seed app(Hybrid App use WAC) development with Device API, HTML5, CSS3.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="period">2011.07 ~ 2012.04</td>
+                        <td class="detail">
+                            <p>SomCloud - Somnote web app developed.</p>
+                            <p>SomCloud - Somnote web app developed.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="period">2012.04 ~ 2015.03</td>
+                        <td class="detail">
+                            <p>SomCloud - website maintenence.</p>
+                            <p>SomCloud web site added function, pages.</p>
+                            <ul>
+                                <li>Somnote image preview function used exif.js</li>
+                                <li>SomCloud invite event page. link: <a
+                                        href="https://somcloud.com/event/invite" target="_black">https://somcloud.com/event/invite</a>
+                                </li>
+                                <li>SomPremium coupon registration page. link: <a
+                                        href="https://somcloud.com/setting/coupon" target="_black">https://somcloud.com/setting/coupon</a>
+                                </li>
+                                <li>Somnote 'catch note backup file(CSV)' import function development.</li>
+                                <li>Sompen Package promotion web page development. link : <a
+                                        href="https://sompen.somcloud.com" target="_black">https://sompen.somcloud.com</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="period">2013.11 ~ 2014.01</td>
+                        <td class="detail">
+                            <p>SomCloud website renewal.</p>
+                            <p>SomCloud web site renewed. Use HTML5, CSS3(animation), Semantic Markup, Responsive web with media query. One HTML file, Multiple CSS file.</p>
+                            <ul>
+                                <li>link: <a href="https://somcloud.com"
+                                             target="_black">https://somcloud.com</a></li>
+                                <li>link: <a href="https://somcloud.com/about/somnote" target="_black">https://somcloud.com/about/somnote</a>
+                                </li>
+                                <li>link: <a href="https://somcloud.com/about/somtodo" target="_black">https://somcloud.com/about/somtodo</a>
+                                </li>
+                                <li>link: <a href="https://somcloud.com/about/premium" target="_black">https://somcloud.com/about/premium</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="period">2014.11 ~ 2015.03</td>
+                        <td class="detail">
+                            <p>ThemeKeyboard</p>
+                            <p>Back-end Development with nginx, PHP, MySQL, MongoDB</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+
 
 
         </article>
@@ -350,10 +326,13 @@
             <h2>PROJECT</h2>
             <ul>
                 <li>
-
+                    <img src="./images/kwac/bg_1.png" alt="KWAC"/>
+                    <img src="./images/kwac/bg_2.png" alt="KWAC"/>
+                    <img src="./images/kwac/bg_3.png" alt="KWAC"/>
+                    <img src="./images/kwac/bg_4.png" alt="KWAC"/>
                 </li>
                 <li>
-
+                    img =
                 </li>
                 <li>
 
