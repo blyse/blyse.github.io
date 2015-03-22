@@ -5,190 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="viewport" content="width=900, initial-scale=0, user-scalable=yes">
     <title>Blyse.GitHub.io by blyse</title>
-
-    <style>
-        ::selection {
-            background: #ff9c9e;
-            color: #ffffff;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        li {
-            list-style: none;
-        }
-
-        header {
-            position: fixed;
-            width: 100%;
-            height: 80px;
-        }
-
-        nav {
-            background: #000;
-            text-align: right;
-        }
-
-        nav ul li {
-            text-align: center;
-            display: inline-block;
-            list-style: none;
-            border-bottom: 4px solid transparent;
-        }
-
-        nav ul li a {
-            color: #ffffff;
-            text-decoration: none;
-            padding: 16px;
-            padding-bottom: 20px;
-            padding-top: 35px;
-            display: block;
-        }
-
-        nav ul li:hover {
-            background: #fff;
-            border-bottom-color: #000;
-        }
-        nav ul li:hover a {
-            color: #000;
-        }
-
-        div.container {
-            padding-top: 80px;
-        }
-
-        section {
-        }
-
-        div.top {
-            height: 550px;
-            background: url('./images/bg1.jpg') no-repeat fixed 50% 90%;
-        }
-
-        section.top {
-            background: #000;
-            padding: 50px;
-        }
-
-        section.top article {
-            max-width: 1044px;
-            margin: 0 auto;
-        }
-
-        section.top h1 {
-            font-size: 30px;
-            color: white;
-            padding: 40px;
-        }
-
-        section.top p {
-            color: #ffffff;
-            padding: 0 40px 40px 40px;
-        }
-
-        section.top div {
-            background: rgba(0, 0, 0, 0.6);
-            height: 250px;
-            width: 250px;
-
-            line-height: 250px;
-            color: #ffffff;
-            text-align: center;
-            display: inline-block;
-            border: 3px solid rgba(0, 0, 0, 0.6);
-            border-radius: 250px;
-
-            margin-right: 15px;
-        }
-
-        section.top div:hover {
-            background: rgba(255, 255, 255, 0.3);
-            color: black;
-            border: 3px solid rgba(0, 0, 0, 0.6);
-        }
-
-        section.top div span {
-
-        }
-
-        section.top div span a {
-            color: white;
-            text-decoration: none;
-        }
-
-        section.profile {
-            padding: 50px;
-        }
-
-        section.profile article {
-            max-width: 1044px;
-            margin: 0 auto;
-        }
-
-        section.profile article h2 {
-            padding: 40px 40px 20px 40px;
-
-        }
-
-        section.profile article h3 {
-            padding: 0 60px;
-        }
-        section.profile article dl {
-            padding: 10px 60px;
-        }
-
-        section.career {
-            padding: 50px;
-            background: rgba(0, 0, 0, 1);
-            position: relative;
-        }
-
-        section.career article {
-            max-width: 1044px;
-            margin: 0 auto;
-            color: white;
-        }
-
-        section.career article h2 {
-            padding: 40px 40px 20px 40px;
-        }
-
-
-        section.career article h3 {
-            padding: 0 60px;
-        }
-
-        section.career h3 {
-            margin-top: 20px;
-        }
-        section.career table {
-            margin: 10px 60px 0 60px;
-            border-spacing: 0
-            10px;
-            display: flex;
-        }
-        section.career table td.period {
-            width: 165px;
-            text-align: right;
-            vertical-align: top;
-        }
-        section.career table td.detail {
-            padding-left: 8px;
-        }
-        section.career table a {
-            color: #fff;
-        }
-        section.career table a:hover {
-            background: #fff;
-            color: #000;
-
-        }
-
-
-    </style>
+    <link rel="stylesheet" href="./stylesheets/stylesheet.css"/>
+    <script src="./javascripts/jquery-2.1.3.min.js"></script>
 </head>
 
 <body>
@@ -244,127 +62,138 @@
     <section id="career" class="career">
         <article>
             <h2>CAREER</h2>
+
             <h3>2005.03 ~ 2011.02 Suwon University - The College Information Technology</h3>
             <table>
                 <tbody>
-                    <tr>
-                        <td class="period">2005.03 ~ 2011.02</td>
-                        <td class="detail">Internet Informaion Engineering.</td>
-                    </tr>
+                <tr>
+                    <td class="period">2005.03 ~ 2011.02</td>
+                    <td class="detail">Internet Informaion Engineering.</td>
+                </tr>
                 </tbody>
             </table>
             <h3>2010.12 ~ 2015.03 Wizard Works</h3>
             <table>
                 <tbody>
-                    <tr>
-                        <td class="period">2010.12 ~ 2012.10</td>
-                        <td class="detail">
-                            <p>KWAC Hybrid Web App Development.</p>
-                            <p>KWAC Seed app(Hybrid App use WAC) development with Device API, HTML5, CSS3.</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="period">2011.07 ~ 2012.04</td>
-                        <td class="detail">
-                            <p>SomCloud - Somnote web app developed.</p>
-                            <p>SomCloud - Somnote web app developed.</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="period">2012.04 ~ 2015.03</td>
-                        <td class="detail">
-                            <p>SomCloud - website maintenence.</p>
-                            <p>SomCloud web site added function, pages.</p>
-                            <ul>
-                                <li>Somnote image preview function used exif.js</li>
-                                <li>SomCloud invite event page. link: <a
-                                        href="https://somcloud.com/event/invite" target="_black">https://somcloud.com/event/invite</a>
-                                </li>
-                                <li>SomPremium coupon registration page. link: <a
-                                        href="https://somcloud.com/setting/coupon" target="_black">https://somcloud.com/setting/coupon</a>
-                                </li>
-                                <li>Somnote 'catch note backup file(CSV)' import function development.</li>
-                                <li>Sompen Package promotion web page development. link : <a
-                                        href="https://sompen.somcloud.com" target="_black">https://sompen.somcloud.com</a>
-                                </li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="period">2013.11 ~ 2014.01</td>
-                        <td class="detail">
-                            <p>SomCloud website renewal.</p>
-                            <p>SomCloud web site renewed. Use HTML5, CSS3(animation), Semantic Markup, Responsive web with media query. One HTML file, Multiple CSS file.</p>
-                            <ul>
-                                <li>link: <a href="https://somcloud.com"
-                                             target="_black">https://somcloud.com</a></li>
-                                <li>link: <a href="https://somcloud.com/about/somnote" target="_black">https://somcloud.com/about/somnote</a>
-                                </li>
-                                <li>link: <a href="https://somcloud.com/about/somtodo" target="_black">https://somcloud.com/about/somtodo</a>
-                                </li>
-                                <li>link: <a href="https://somcloud.com/about/premium" target="_black">https://somcloud.com/about/premium</a>
-                                </li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="period">2014.11 ~ 2015.03</td>
-                        <td class="detail">
-                            <p>ThemeKeyboard</p>
-                            <p>Back-end Development with nginx, PHP, MySQL, MongoDB</p>
-                        </td>
-                    </tr>
+                <tr>
+                    <td class="period">2010.12 ~ 2012.10</td>
+                    <td class="detail">
+                        <p>KWAC Hybrid Web App Development.</p>
+
+                        <p>KWAC Seed app(Hybrid App use WAC) development with Device API, HTML5, CSS3.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="period">2011.07 ~ 2012.04</td>
+                    <td class="detail">
+                        <p>SomCloud - Somnote web app developed.</p>
+
+                        <p>SomCloud - Somnote web app developed.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="period">2012.04 ~ 2015.03</td>
+                    <td class="detail">
+                        <p>SomCloud - website maintenence.</p>
+
+                        <p>SomCloud web site added function, pages.</p>
+                        <ul>
+                            <li>Somnote image preview function used exif.js</li>
+                            <li>SomCloud invite event page. link: <a
+                                    href="https://somcloud.com/event/invite" target="_black">https://somcloud.com/event/invite</a>
+                            </li>
+                            <li>SomPremium coupon registration page. link: <a
+                                    href="https://somcloud.com/setting/coupon" target="_black">https://somcloud.com/setting/coupon</a>
+                            </li>
+                            <li>Somnote 'catch note backup file(CSV)' import function development.</li>
+                            <li>Sompen Package promotion web page development. link : <a
+                                    href="https://sompen.somcloud.com" target="_black">https://sompen.somcloud.com</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="period">2013.11 ~ 2014.01</td>
+                    <td class="detail">
+                        <p>SomCloud website renewal.</p>
+
+                        <p>SomCloud web site renewed. Use HTML5, CSS3(animation), Semantic Markup, Responsive web with
+                            media query. One HTML file, Multiple CSS file.</p>
+                        <ul>
+                            <li>link: <a href="https://somcloud.com"
+                                         target="_black">https://somcloud.com</a></li>
+                            <li>link: <a href="https://somcloud.com/about/somnote" target="_black">https://somcloud.com/about/somnote</a>
+                            </li>
+                            <li>link: <a href="https://somcloud.com/about/somtodo" target="_black">https://somcloud.com/about/somtodo</a>
+                            </li>
+                            <li>link: <a href="https://somcloud.com/about/premium" target="_black">https://somcloud.com/about/premium</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="period">2014.11 ~ 2015.03</td>
+                    <td class="detail">
+                        <p>ThemeKeyboard</p>
+
+                        <p>Back-end Development with nginx, PHP, MySQL, MongoDB</p>
+                    </td>
+                </tr>
                 </tbody>
             </table>
 
 
-
-
         </article>
     </section>
-    <section>
+    <section id="project" class="project">
         <article>
             <h2>PROJECT</h2>
             <ul>
                 <li>
                     <img src="./images/kwac/bg_1.png" alt="KWAC"/>
+                </li>
+                <li>
                     <img src="./images/kwac/bg_2.png" alt="KWAC"/>
-                    <img src="./images/kwac/bg_3.png" alt="KWAC"/>
-                    <img src="./images/kwac/bg_4.png" alt="KWAC"/>
                 </li>
-                <li>
-                    img =
-                </li>
-                <li>
-
-                </li>
-                <li>
-
-                </li>
-                <li>
-                </li>
+                <li><img src="./images/kwac/bg_3.png" alt="KWAC"/></li>
+                <li><img src="./images/kwac/bg_4.png" alt="KWAC"/></li>
+                <li><img src="./images/somcloud/index.png" alt="somcloud index"/></li>
+                <li><img src="./images/somcloud/somnote.png" alt="somnote about page"/></li>
+                <li><img src="./images/somcloud/somtodo.png" alt="somtodo about page"/></li>
+                <li><img src="./images/somcloud/sompremium.png" alt="sompremium about page"/></li>
             </ul>
         </article>
     </section>
-    <section>
+    <section id="contact" class="contact">
         <article>
             <h2>CONTACT</h2>
-            <ul>
-                <li>
-                    <dl>
-                        <dt>E-mail</dt>
-                        <dd>blythe2586 at gmail.com</dd>
-                    </dl>
-                </li>
-                <li>
-                    <dl>
-                        <dt>Facebook</dt>
-                        <dd><a href="https://facebook.com/blythe2586">@blythe2586</a></dd>
-                    </dl>
-                </li>
-            </ul>
+            <address>
+                E-mail : <a href="mailto:blythe2586@gmail.com">blythe2586 at gmail.com</a><br/>
+                Facebook : <a href="https://facebook.com/blythe2586">@blythe2586</a>
+            </address>
         </article>
     </section>
 </div>
+<div class="img_preview">
+</div>
+<script>
+    $("docmuent").ready(function() {
+        $("section.project li img").on("click", function() {
+            var _tmpimg = new Image();
+            _tmpimg.src = $(this).attr('src');
+
+            var _preview = $(".img_preview");
+            _preview.html(_tmpimg);
+            _preview.scrollTop(0);
+            _preview.show();
+            _preview.on("click", function(){
+                $(this).html('').off('click').hide();
+            })
+
+
+        });
+        console.log("enenalt")
+    })
+</script>
 </body>
 </html>
