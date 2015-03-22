@@ -196,9 +196,10 @@
 
             var _preview = $(".img_preview");
             _preview.html(_tmpimg);
-            _preview.scrollTop(0);
+
             _preview.show();
             _preview.on("click", function(){
+                $(this).scrollTop(0);
                 $(this).html('').off('click').hide();
             })
 
