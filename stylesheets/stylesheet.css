@@ -207,6 +207,7 @@ section.project li {
     height: 302px;
     overflow:hidden;
     display: inline-block;
+    cursor: pointer;
 }
 
 section.project img {
@@ -239,6 +240,7 @@ div.img_preview {
     top:0;
     left:0;
     overflow-x: scroll;
+    cursor: pointer;
 }
 div.img_preview img {
     max-width :80%;
