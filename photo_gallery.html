@@ -1,9 +1,94 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script src=""></script>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <title>Photo Gallery</title>
+    <script src="./javascripts/jquery-2.1.3.min.js"></script>
+    <script src="./javascripts/exif.js"></script>
+
+
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            line-height: 0;
+        }
+
+        img {
+            width: 1024px;
+            padding: 30px;
+            box-shadow:0 2px 24px rgba(0,0,0,0.3);
+
+            margin: 20px;
+        }
+        img.orientation1 {
+            transform: rotate(0deg);
+            -ms-transform: rotate(0deg); /* IE 9 */
+            -webkit-transform: rotate(0deg); /* Safari and Chrome */
+        }
+        img.orientation3 {
+            transform: rotate(180deg);
+            -ms-transform: rotate(180deg); /* IE 9 */
+            -webkit-transform: rotate(180deg); /* Safari and Chrome */
+        }
+        img.orientation6 {
+            transform: rotate(90deg);
+            -ms-transform: rotate(90deg); /* IE 9 */
+            -webkit-transform: rotate(90deg); /* Safari and Chrome */
+            margin-top: 135px;
+        }
+        img.orientation8 {
+            transform: rotate(-90deg);
+            -ms-transform: rotate(-90deg); /* IE 9 */
+            -webkit-transform: rotate(-90deg); /* Safari and Chrome */
+            margin-top: 135px;
+        }
+    </style>
+
 </head>
 <body>
 
+<script>
+
+
+    var _imglist = ['20130514_112759.jpg', 'SAM_5063.JPG', 'SAM_5103.JPG', 'SAM_5616.JPG', 'SAM_6077.JPG', '20140329_150500_Richtone(HDR).jpg', '20140622_130213.jpg', '20140930_180129.jpg'];
+    _imglist = ['20130514_112759.jpg', '20140329_150500_Richtone(HDR).jpg', '20140622_130213.jpg', '20140930_180213.jpg', '20141019_165052.jpg', '1399626852133.jpeg', 'IMG_20140930_170846.jpg', 'SAM_5063.JPG','SAM_5103.JPG',  'SAM_5616.JPG', 'SAM_6077.JPG', 'SAM_6911.JPG', 'SAM_6914.JPG', 'SAM_6932.JPG', 'SAM_7029.JPG', 'SAM_7093.JPG', 'SAM_7180.JPG', 'SAM_7201.JPG','SAM_7305.JPG',   'SAM_7451.JPG']
+    var _imgdata = [];
+    var _exifdata = [];
+
+    for(var idx = 0; idx < _imglist.length; idx++) {
+        draw(_imglist[idx]);
+    }
+
+    function draw() {
+        var _src = './images/photography/' + _imglist[idx];
+
+        var _tmp = new Image();
+
+        _tmp.onload = function(e) {
+            EXIF.getData(_tmp, function(){
+                console.log(_tmp.exifdata);
+                console.log(_tmp.exifdata.Orientation);
+                _tmp.className = 'orientation' + _tmp.exifdata.Orientation;
+
+                $("body").append(_tmp)
+            });
+        };
+
+        _tmp.src = _src;
+
+        console.log('!!');
+
+    }
+
+
+
+
+</script>
 </body>
 </html>
+
